@@ -19,7 +19,7 @@ heading.innerText = "Play X!";
 //what happens when you click any button
 spaces.forEach((space) => {
     space.addEventListener("click" , () => {
-        var audio = new Audio("keyPress.mp3");
+        var audio = new Audio("KeyPress.mp3");
         audio.play();
 
         heading.innerText = "Game in Progress"
@@ -56,7 +56,7 @@ let checkWinner = () => {
 
         if (pos1 != 0 && pos1 != 0 && pos2 != 0){
             if (pos1 === pos2 && pos2 === pos3) {
-                var audio = new Audio("winner.mp3");
+                var audio = new Audio("Winner.mp3");
                 audio.play();
                 heading.innerText = "Winner is " + pos1;
                 disableSpaces();
